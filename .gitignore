@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.env.*
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Django Migrations
+*/migrations/
+!*/migrations/__init__.py
+
+# SQLite Database (if used)
+db.sqlite3
+
+# Secrets and environment variables
+.env
+*.secret
+secrets.json
+
+# IDEs
+.vscode/
+.idea/
+
+# Bytecode and cache
+*.log
+*.pot
+*.pyc
+.DS_Store
+*.so
+*.egg-info/
+.eggs/
+
+# Coverage reports
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+.cache
+nosetests.xml
+test-results.xml
+
+# pip tools
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Swagger generated files (if you ever export schemas)
+*.json
+*.yaml
+
+# Build
+build/
+dist/
+*.egg
+*.egg-info/
+
+# Node if using frontend (optional)
+node_modules/
