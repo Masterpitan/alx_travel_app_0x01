@@ -1,5 +1,6 @@
 from django.db import models
 
+# Creating a Listing class
 class Listing(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
@@ -7,6 +8,7 @@ class Listing(models.Model):
     location = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
 
+# Creating a booking class
 class Booking(models.Model):
     listing = models.ForeignKey(Listing, on_delete=models.CASCADE, related_name='bookings')
     customer_name = models.CharField(max_length=100)
